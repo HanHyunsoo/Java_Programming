@@ -23,7 +23,7 @@ int [] unit = {50000, 10000, 1000, 500, 100, 50, 10, 1}; // 환산할 돈의 종
 package universityhomework;
 import java.util.Scanner;
 
-public class page115No6 {
+public class page165No6 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in); // 입력 받기 위해 Scanner 클래스를 생성합니다.
         int [] unit = {50000, 10000, 1000, 500, 100, 50, 10, 1}; // 환산할 돈의 종류
