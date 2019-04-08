@@ -13,7 +13,8 @@ public class Page242No4 {
         Rectangle r = new Rectangle(2, 2, 8, 7);
         Rectangle s = new Rectangle(5, 5, 6, 6);
         Rectangle t = new Rectangle(1, 1, 10, 10);
-        Rectangle checkError = new Rectangle(); // 예외가 잘작동하는지 테스트하기위해 checkError인 변수에 Rectangle 클래스를 만든다.
+        // 예외가 잘작동하는지 테스트하기위해 checkError인 변수에 Rectangle 클래스를 만든다.
+        Rectangle checkError = new Rectangle();
         
         r.show();
         checkError.show();
@@ -25,7 +26,8 @@ public class Page242No4 {
 
 class Rectangle {
     int x1, y1, x2, y2, width, height;
-    boolean checkRectangle = false; // 현재 클래스가 직사각형을 만족하는지 체크하는 논리형 변수(조건: width > 0, height > 0)
+    // 현재 클래스가 직사각형을 만족하는지 체크하는 논리형 변수(조건: width > 0, height > 0)
+    boolean checkRectangle = false;
 
     public Rectangle() {
         this(0, 0, 0, 0);
@@ -43,7 +45,8 @@ class Rectangle {
         this(x, y, width, 0);
     }
     
-    // 여기까지는 매개변수가 한개라도 없으면 직사각형을 만족을 못하므로 checkRectangle은 false다(기본으로 false로 설정하여 직사각형이면 true로 다시저장).
+    // 여기까지는 매개변수가 한개라도 없으면 직사각형을 만족을 못하므로
+    // checkRectangle은 false다(기본으로 false로 설정하여 직사각형이면 true로 다시저장).
 
     public Rectangle(int x, int y, int width, int height) {
         this.x1 = x;
@@ -52,7 +55,8 @@ class Rectangle {
         y2 = y1 + height - 1;
         this.width = width;
         this.height = height;
-        if(width > 0 && height > 0) checkRectangle = true; // 가로, 세로의 길이가 0이 넘으면 직사각형이 맞다.
+        // 가로, 세로의 길이가 0이 넘으면 직사각형이 맞다.
+        if(width > 0 && height > 0) checkRectangle = true;
     }
     
     public int square() {
