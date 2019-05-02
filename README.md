@@ -15,3 +15,4 @@
 ## study 폴더 목차
 
 1. [자바 개발환경 구축](https://github.com/HanHyunsoo/Study_Java/tree/master/src/study/1_installJava)
+2. [자바 시작(변수, 주석)](https://github.com/HanHyunsoo/Study_Java/tree/master/src/study/2_startJava)
