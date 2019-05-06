@@ -23,7 +23,7 @@ class Dictionary {
 
 public class Page245No10 {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in, "euc-kr");
+        Scanner scan = new Scanner(System.in);
 
         System.out.println("한영 단어 검색 프로그램입니다.");
         while(true) {
