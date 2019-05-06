@@ -1,6 +1,3 @@
-# vscode java project
-.settings/
-.vscode/
-bin/
-.classpath
-.project
+.idea
+out
+Java_Programming.iml
