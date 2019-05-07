@@ -35,11 +35,10 @@ class Point {
 }
 
 class ColorPoint extends Point {
-    private String color;
+    private String color = "BLACK";
 
     public ColorPoint() {
         super(0, 0);
-        this.color = "BLACK";
     }
 
     public ColorPoint(int x, int y) {
