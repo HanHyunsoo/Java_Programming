@@ -57,3 +57,58 @@ int bin = 0b111; // 십진수: 7
 int octal = 023;    // 십진수: 19
 int hex = 0xC;     // 십진수: 12
 ```
+
+## 사칙연산
+
+자바에서는 `+, -, *, /` 기호를 이용하여 사칙 연산을 수행한다.
+각각 더하기, 빼기, 곱하기, 나누기를 의미한다.
+
+```java
+int a = 10;
+int b = 4;
+System.out.println(a + b); // 14
+System.out.println(a - b); // 6
+System.out.println(a * b); // 40
+System.out.println(a / b); // 2
+System.out.println((double)a / b) // 2.5
+```
+
+위에서 `a / b` 가 원래 수학 사칙연산에서는 `2.5` 이지만 
+a, b가 둘다 int형 이기 때문에 몫 값이 출력된다.
+따라서 소수점을 포함해서 원하는 값을 얻으려면 마지막 줄처럼 `(double)`을
+명시해주거나 변수 타입이 한개라도 double형 이여야한다.
+
+위 사칙연산 이외에도 연산자가 하나 더있는데 `%` 이다.
+`%` 기호는 나머지를 계산한다.
+
+## 증감연산(++, --)
+
+```java
+int a = 0;
+int b = 10;
+a++;
+b--;
+System.out.println(a); // 1
+System.out.println(b); // 9
+```
+
+위 예시와 같이 `++` 는 값을 1씩 증가시키는 연산, `--` 는 값을 1씩 감소하는 연산이다.
+
+이외에도 증감연산의 위치에따라 연산 순서가 정해진다. 아래 예시를 보자
+
+```java
+int i = 0;
+System.out.println(i++); // 0
+System.out.println(i);   // 1
+
+i = 0; // 0으로 다시 초기화
+System.out.println(++i) // 1
+System.out.println(i)   // 1
+```
+
+위와 같이 `++` 를 앞에 명시하면 값이 먼저 증가된후 참조된다 즉 정리하자면
+
+* `i++` : i의 값이 먼저 참조된 후 증가
+* `++i` : i의 값이 참조 되기 전 증가 
+
+`--` 연산자도 마찬가지로 위 규칙과 같다.
