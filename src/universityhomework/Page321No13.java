@@ -3,16 +3,16 @@ package universityhomework;
 public class Page321No13 {
     public static void main(String[] args) {
         Shape donut = new Circle(10);
-        donut.draw();
+        donut.redraw();
         System.out.println("면적은 " + donut.getArea());
     }
 }
 
 interface Shape {
-    final double PI = 3.14;
+    double PI = 3.14;
     void draw();
     double getArea();
-    default public void redraw() {
+    default void redraw() {
         System.out.print("--- 다시 그립니다. ");
         draw();
     }
