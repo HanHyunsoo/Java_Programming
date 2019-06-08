@@ -32,6 +32,9 @@ public class No7 {
                     }
                 }
             }
+
+            fis.close();
+            fos.close();
         } catch (Exception e) {
             System.out.println("오류.");
             e.printStackTrace();
